@@ -95,7 +95,6 @@ function playAgain(){
     grid.remove();
     let reintento = document.getElementById("retry-button");
     reintento.remove();
-    console.log("Works (debug)");
     
     let recreateGrid = document.createElement("div");
     recreateGrid.id = "grid";
