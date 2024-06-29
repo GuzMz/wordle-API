@@ -84,20 +84,21 @@ function playAgain(){
         .then((data)=>{
             palabraSecreta = data[0].toUpperCase()
             console.log("Word (for debug purposes): "+data)
+            button.disabled = false;
+            input.disabled = false;
+            
+            oportunidades = 6;
+            attemptTicker("Intentos: "+oportunidades)
+            
+            grid = document.getElementById("grid")
+            grid.remove();
+            let reintento = document.getElementById("retry-button");
+            reintento.remove();
+            
+            let recreateGrid = document.createElement("div");
+            recreateGrid.id = "grid";
+            let lugar = document.getElementById("supergrid");
+            lugar.appendChild(recreateGrid);
     })})
-    button.disabled = false;
-    input.disabled = false;
     
-    oportunidades = 6;
-    attemptTicker("Intentos: "+oportunidades)
-    
-    grid = document.getElementById("grid")
-    grid.remove();
-    let reintento = document.getElementById("retry-button");
-    reintento.remove();
-    
-    let recreateGrid = document.createElement("div");
-    recreateGrid.id = "grid";
-    let lugar = document.getElementById("supergrid");
-    lugar.appendChild(recreateGrid);
 }
