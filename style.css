@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+     
+#guess-input {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+     
+#guess-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #0CBABA;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+#retry-button:hover{
+    background-color: #10a3a3;
+}
+#guess-button:hover{
+  background-color: #10a3a3;
+}
+#retry-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #0CBABA;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+    
+button:active {
+    transform: scale(0.95);
+}
+    
+.letter {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 4px;
+  min-width: 30px;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+}
+    
+.row{
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+    
+.input-area{
+  margin: 30px;
+}
+
+#guesses{
+  padding: 1px;
+  text-align: center;
+}
+
+h3{
+  padding: 0;
+  margin: 0;
+}
