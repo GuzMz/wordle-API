@@ -86,6 +86,9 @@ function playAgain(){
             console.log("Word (for debug purposes): "+data)
             button.disabled = false;
             input.disabled = false;
+
+            let contenedor = document.getElementById("guesses");
+            contenedor.innerHTML = "<h3>" + "Cargando..." + "</h3>";
             
             oportunidades = 6;
             attemptTicker("Intentos: "+oportunidades)
